@@ -41,11 +41,16 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Deploy
 
-Since this is one project out of several others in the same repository, for pushing changes related to it run
+After logging in to Heroku and creating a new app, run the following for deploying:
 
 ```bash
-# Only push the changes in the `backend/` folder
-git subtree push --prefix image-uploader/backend heroku master
+git push heroku master
 ```
 
-For running a complete deployment process (frontend building and pushing to Heroku), go to the `backend/` directory and run `npm run deploy`.
+The `package.json` at the root describes how to install dependencies, build the frontend and run the server:
+
+- `postinstall`: step into each `backend` and `frontend` folders and run `npm install`
+- `heroku-postbuild`: build the frontend application and copy the code to `backend` for static serving
+- `start`: move to the `backend` folder and run the server
+
+This is necessary, since code from both backend and frontend is in the same repository.
