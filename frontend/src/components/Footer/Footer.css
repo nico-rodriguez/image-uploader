@@ -1,0 +1,10 @@
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  margin-left: 1ch;
+  margin-right: 1ch;
+}
