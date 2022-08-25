@@ -1,0 +1,13 @@
+{
+  "name": "image-uploader",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Image Uploader</h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && node index.js",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install",
+    "heroku-postbuild": "rm -fr ./backend/build && cd ./frontend && npm run build cp -r ./build ../backend"
+  },
+  "author": "",
+  "license": "ISC"
+}
