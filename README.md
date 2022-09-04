@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://image-uploader-48564.herokuapp.com/">
+    <a href="https://image-uploader-38e5.onrender.com/">
       Solution
     </a>
     <span> | </span>
@@ -18,7 +18,7 @@
 
 ## Overview
 
-Visit [https://image-uploader-48564.herokuapp.com/](https://image-uploader-48564.herokuapp.com/).
+Visit [https://image-uploader-38e5.onrender.com/](https://image-uploader-38e5.onrender.com/).
 
 Uploading an image:
 
