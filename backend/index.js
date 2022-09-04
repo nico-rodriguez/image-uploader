@@ -7,7 +7,6 @@ const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const errorHandler = require('./middleware/errorHandler');
-require('dotenv').config();
 
 // *********** Constants
 const app = express();
