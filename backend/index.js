@@ -88,7 +88,7 @@ app.post(
   }
 );
 
-app.set('trust proxy', 0);
+app.set('trust proxy', true);
 app.get('/ip', limiter, (request, response) =>
   response.json({ ip: request.ip, ips: request.ips })
 );
