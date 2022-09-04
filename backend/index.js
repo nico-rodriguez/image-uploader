@@ -88,8 +88,10 @@ app.post(
   }
 );
 
-app.set('trust proxy', 1);
-app.get('/ip', limiter, (request, response) => response.send(request.ip));
+app.set('trust proxy', 0);
+app.get('/ip', limiter, (request, response) =>
+  response.json({ ip: request.ip, ips: request.ips })
+);
 
 // **************** Error handler
 app.use(errorHandler);
